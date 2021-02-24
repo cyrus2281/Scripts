@@ -1,5 +1,5 @@
 # LineCounter
-# Author: Milad Mobini February 2021
+Author: Milad Mobini February 2021
 
 This bash script will go through all the:
 php, css, html, javascript, java, fxml, arduino, sql
