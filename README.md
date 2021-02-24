@@ -9,3 +9,6 @@ and will count all the lines and add them together
 
 This script will avoid all files with name of:
 *min.css, *all.css, *min.js, *all.js
+
+
+The bash MUST BE RUN at the parent directory

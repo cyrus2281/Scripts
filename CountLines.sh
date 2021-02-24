@@ -1,8 +1,11 @@
 #Author: Milad Mobini February 2021
-#This bash script will go through all the [ php, css, html, javascript, java, fxml, arduino, sql]
+#This bash script will go recursively through all the [ php, css, html, javascript, java, fxml, arduino, sql]
 #and will count all the lines and add them together
 #This script will avoid all files with name of [*min.css, *all.css, *min.js, *all.js]
-#press q to exit the program
+
+#The bash MUST BE RUN at the parent directory
+#You can add restriction by adding "-not -path "FileName"" after "-name 'name'"
+#press q to exit the program 
 
 find . -name '*.php' | xargs wc -l | grep total | cut -d 't' -f1 > result.txt;
 find . -name '*.css' -not -path "*min.css" -not -path "*all.css" | xargs wc -l | grep total | cut -d 't' -f1 >> result.txt;
