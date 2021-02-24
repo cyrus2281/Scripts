@@ -2,7 +2,7 @@
 Author: Milad Mobini February 2021
 
 This bash script will go recursively through all the:
-php, css, html, javascript, java, fxml, arduino, sql
+php, css, html, javascript, java, fxml, arduino, sql, bash
 files
 
 and will count all the lines and add them together

@@ -1,5 +1,5 @@
 #Author: Milad Mobini February 2021
-#This bash script will go recursively through all the [ php, css, html, javascript, java, fxml, arduino, sql]
+#This bash script will go recursively through all the [ php, css, html, javascript, java, fxml, arduino, sql, bash]
 #and will count all the lines and add them together
 #This script will avoid all files with name of [*min.css, *all.css, *min.js, *all.js]
 
@@ -15,5 +15,6 @@ find . -name '*.java' | xargs wc -l | grep total | cut -d 't' -f1 >> result.txt;
 find . -name '*.fxml' | xargs wc -l | grep total | cut -d 't' -f1 >> result.txt;
 find . -name '*.ino' | xargs wc -l | grep total | cut -d 't' -f1 >> result.txt;
 find . -name '*.sql' | xargs wc -l | grep total | cut -d 't' -f1 >> result.txt;
+find . -name '*.sh' | xargs wc -l | grep total | cut -d 't' -f1 >> result.txt;
 { { echo "total number of lines:"; awk '{ sum += $1 } END { print sum }' result.txt; } | tr "\n" " " ; echo "zpress q to exit";} | tr "z" "\n" | less ;
 rm result.txt;
