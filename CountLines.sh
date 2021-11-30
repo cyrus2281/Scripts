@@ -1,7 +1,8 @@
 #!/bin/bash
 #Author: Milad Mobini December 2021
 
-#This bash script will go recursively through all the files and will count all the lines and return the total number of lines
+# This bash script will go recursively through all the files and will count all the lines and return the total number of lines
+# If not path is provided or the provideded path doesn't exists, it will recursively count from current directory 
 OIFS="$IFS"
 IFS=$'\n'
 function count(){
@@ -21,11 +22,10 @@ function count(){
 
 if [[ $# -ge 1 && -e $1 ]]; then
 	total=$(count $1 0)
-	echo "There are a total of $total lines"
 else 
-	echo "Invalid input $# $1"
-	echo "Please provide path to a file or directory"
+	total=$(count "./" 0)
 fi
+echo "There are a total of $total lines"
 IFS="$OIFS"
 
 
