@@ -1,0 +1,1 @@
+This folder include the practice files for bash
