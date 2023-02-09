@@ -69,7 +69,7 @@ esac
 menu="A B C Quit"
 select choice in $menu; do
     [[ $choice == Quit ]] && {
-        echo bye Milad
+        echo bye Cyrus
         break
     }
     echo -ne "You selected $choice ($REPLY)\n\n"

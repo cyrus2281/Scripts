@@ -19,8 +19,8 @@ trap 'echo "sth went wrong"' INT TERM
 
 
 #with the export you can make environmental variables in shell
-#to set globally #export var=milad
-#to set locally #var=milad ./output.sh  #higher precedence
+#to set globally #export var=cyrus
+#to set locally #var=cyrus ./output.sh  #higher precedence
 echo var is $var
 
 

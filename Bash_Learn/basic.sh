@@ -16,7 +16,7 @@ echo -n "hello $variable"
 echo -ne "\nhello $variable\n"
 
 #printf takes argument (spcae between args)
-name=Milad
+name=Cyrus
 lName="Mo Bi Ni"
 age=18
 printf "Hello %s %s! You are %d years old\n" $name "$lName" $age #since lName returns multiple words it shout be in quatation marks

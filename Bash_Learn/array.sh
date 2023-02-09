@@ -79,4 +79,4 @@ arrFunc[1]=byeFun
 
 for val in ${!arrFunc[@]} ; do ${arrFunc[$val]} ; done;
 
-${arrFunc[1]} milad
+${arrFunc[1]} cyrus
